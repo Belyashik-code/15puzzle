@@ -1,0 +1,47 @@
+<html>
+<head>
+  <!-- Возможно было использовать trasition/transition-group для создания анимации перемещения ячеек,
+  но отказался от этого в пользу демонстрации своих навыков css=). Притянул за уши bootstrap с той же целью=)
+  Уверен, что можно оптимизировать выдачу переменных soc1-soc16, но в пределах тех 4-5 часов,
+  которые были отведены на задание сделать этого не удалось, та же история и с win(),
+  не знаю, получилось ли мне соответствовать требованию "красиво", но вроде бы ничего=)-->
+  <title> Пятнашки </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+<body>
+<div id="main">
+  <div class="counter">
+    <h1>Количество ходов: {{counter}}</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-3 text-center blocks" id="1" @click="switcher(1)"><h1>{{soc1}}</h1></div>
+      <div class="col-3 text-center blocks" id="2"  @click="switcher(2)"><h1>{{soc2}}</h1></div>
+      <div class="col-3 text-center blocks" id="3"  @click="switcher(3)"><h1>{{soc3}}</h1></div>
+      <div class="col-3 text-center blocks" id="4"  @click="switcher(4)"><h1>{{soc4}}</h1></div>
+      <div class="col-3 text-center blocks" id="5"  @click="switcher(5)"><h1>{{soc5}}</h1></div>
+      <div class="col-3 text-center blocks" id="6"  @click="switcher(6)"><h1>{{soc6}}</h1></div>
+      <div class="col-3 text-center blocks" id="7"  @click="switcher(7)"><h1>{{soc7}}</h1></div>
+      <div class="col-3 text-center blocks" id="8"  @click="switcher(8)"><h1>{{soc8}}</h1></div>
+      <div class="col-3 text-center blocks" id="9"  @click="switcher(9)"><h1>{{soc9}}</h1></div>
+      <div class="col-3 text-center blocks" id="10"  @click="switcher(10)"><h1>{{soc10}}</h1></div>
+      <div class="col-3 text-center blocks" id="11"  @click="switcher(11)"><h1>{{soc11}}</h1></div>
+      <div class="col-3 text-center blocks" id="12"  @click="switcher(12)"><h1>{{soc12}}</h1></div>
+      <div class="col-3 text-center blocks" id="13"  @click="switcher(13)"><h1>{{soc13}}</h1></div>
+      <div class="col-3 text-center blocks" id="14"  @click="switcher(14)"><h1>{{soc14}}</h1></div>
+      <div class="col-3 text-center blocks" id="15"  @click="switcher(15)"><h1>{{soc15}}</h1></div>
+      <div class="col-3 text-center inactive" id="empty"  @click="switcher(16)" ><h1>{{soc16}}</h1></div>
+    </div>
+  </div>
+</div>
+<script src="/Users/belaevaleksander/Desktop/Пятнашки/vuescript.js"> </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

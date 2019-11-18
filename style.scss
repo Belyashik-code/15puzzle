@@ -1,0 +1,47 @@
+html,body,ul,
+ol,table,
+tr,td {
+  margin:  0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Amatic SC';
+}
+
+.row  {
+  background-color: rgba(0, 0, 255, .1);
+  border-radius: 15px;
+}
+.blocks {
+  box-sizing: border-box;
+  background-color: #a486ff;
+  text-align: center;
+  height: 150px;
+  border-radius: 15px;
+  font-family: 'Amatic SC';
+  font-size: 3rem;
+  border: 2px dashed #d99dff;
+  transition-property: all;
+  transition-duration: 2s;
+  h1{
+    padding-top: 3rem;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+}
+.inactive {
+  height: 150px;
+  border-radius: 15px;
+  border: 2px dashed #d99dff;
+  background-color: rgba(0, 0, 255, .2);
+}
+.counter{
+  padding: 25px;
+  text-align: center;
+  h1{
+    font-size: 3rem;
+  }
+}
+.empty {
+
+}
